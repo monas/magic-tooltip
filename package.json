@@ -1,7 +1,7 @@
 {
   "name": "magic-tooltip",
   "description": "A tooltips with some magic.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Laimonas Narbutas <info@monas.lt>",
   "license": "MIT",
   "private": false,
