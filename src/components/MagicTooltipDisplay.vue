@@ -2,7 +2,7 @@
 import {mapGetters} from 'vuex';
 
 export default {
-  name: 'TooltipDisplay',
+  name: 'MagicTooltipDisplay',
   data() {
     return {
       hovered: false,

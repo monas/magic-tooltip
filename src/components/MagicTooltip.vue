@@ -9,7 +9,7 @@
 import {mapGetters} from 'vuex';
 
 export default {
-  name: 'TooltipTrigger',
+  name: 'MagicTooltipTrigger',
   props: {
     direction: {
       type: String,

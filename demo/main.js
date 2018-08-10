@@ -3,7 +3,7 @@ import App from "./App";
 import Vuex from "vuex";
 
 // import components store module
-import tooltip from "./components/MagicTooltipStore";
+import tooltip from "./../src/components/MagicTooltipStore";
 
 Vue.use(Vuex);
 

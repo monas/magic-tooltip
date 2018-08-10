@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import MagicTooltip from './components/MagicTooltip';
-import MagicTooltipDisplay from './components/MagicTooltipDisplay';
+import MagicTooltip from './../src/components/MagicTooltip';
+import MagicTooltipDisplay from './../src/components/MagicTooltipDisplay';
 
 export default {
   data: () => ({
