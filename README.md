@@ -5,14 +5,65 @@
 ## Build Setup
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+# add package to Your project via yarn or npm
+yarn add magic-tooltip
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## How to use?
+For more information [check this story](https://medium.com/@monazzz/the-tooltip-web-component-with-vue-and-vuex-3b588917ab62).
+
+## Basic example
+
+Import components. There are three parts of this puzzle:
+
+* MagicTooltipDisplay - global component for disaplaying stuff.
+* MagicTooltipStore - Vuex store for global display.
+* MagicTooltip - component which will trigger the display.
+
+### Setup store
+It can be used in few ways depending on Your Vuex store configuration
+
+``` js
+// useing as a module
+import {
+  MagicTooltipStore
+} from 'magic-tooltip'
+
+export const state = MagicTooltipStore.state
+export const mutations = MagicTooltipStore.mutations
+export const actions = MagicTooltipStore.actions
+export const getters = MagicTooltipStore.getters
+```
+
+### Then regular component usage stuff
+``` js
+import {MagicTooltip} from 'magic-tooltip';
+```
+
+``` html
+<!-- inside of some component -->
+<ul> <!-- the list or some other wrapper -->
+  <!-- the row -->
+  <li v-for="(row, index) in dataSrc" :key="index">
+   #{{ row.id }} 
+   ...more components or content of the row goes here...
+    <magic-tooltip direction="right">
+      <!-- this slot will be trigger for the tooltip -->
+      <span slot="target">{{row.username}}</span>
+
+      <!-- this slot will be sent to global
+       tooltip display when target is hovered -->
+      <div slot="content">
+        {{row.name}} <br />
+        <i>{{row.company.catchPhrase}}</i><br>
+        {{row.company.name}}<br><br>
+        <a :href="row.website" target="_blank">{{row.website}}</a>
+      </div>
+    </magic-tooltip>
+  </li>
+</ul>
+
+<!-- this is global component -->
+<!-- make sure You have only one this per entire page -->
+<magic-tooltip-display></magic-tooltip-display>
+```
