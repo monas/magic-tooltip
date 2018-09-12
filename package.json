@@ -1,8 +1,12 @@
 {
   "name": "magic-tooltip",
   "description": "A tooltips with some magic.",
-  "version": "1.0.4",
+  "keywords": [
+    "vue tooltip", "vuejs tooltip", "magic tooltip"
+  ],
+  "version": "1.0.6",
   "author": "Laimonas Narbutas <info@monas.lt>",
+  "homepage": "https://github.com/monas/magic-tooltip",
   "license": "MIT",
   "private": false,
   "main": "src/index.js",
