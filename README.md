@@ -37,7 +37,7 @@ export const getters = MagicTooltipStore.getters
 
 ### Then regular component usage stuff
 ``` js
-import {MagicTooltip} from 'magic-tooltip';
+import {MagicTooltip, MagicTooltipDisplay} from 'magic-tooltip';
 ```
 
 ``` html
@@ -67,3 +67,5 @@ import {MagicTooltip} from 'magic-tooltip';
 <!-- make sure You have only one this per entire page -->
 <magic-tooltip-display></magic-tooltip-display>
 ```
+
+Don't forget to register imorted components. Enjoy!
