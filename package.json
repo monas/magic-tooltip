@@ -2,22 +2,24 @@
   "name": "magic-tooltip",
   "description": "A tooltips with some magic.",
   "keywords": [
-    "vue tooltip", "vuejs tooltip", "magic tooltip"
+    "vue tooltip",
+    "vuejs tooltip",
+    "magic tooltip"
   ],
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Laimonas Narbutas <info@monas.lt>",
   "homepage": "https://github.com/monas/magic-tooltip",
   "license": "MIT",
   "private": false,
   "main": "src/index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "dev": "cross-env MODE_ENV=development webpack-dev-server --open --hot --mode=development",
+    "build": "cross-env MODE_ENV=production webpack --progress --hide-modules --mode=production"
   },
   "dependencies": {
-    "vue": "^2.5.11",
-    "vuex": "3.0.1",
-    "babel-preset-stage-3": "^6.24.1"
+    "babel-preset-stage-3": "^6.24.1",
+    "vue": "^2.6.4",
+    "vuex": "3.0.1"
   },
   "browserslist": [
     "> 1%",
@@ -31,9 +33,10 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
-    "vue-loader": "^13.0.5",
-    "vue-template-compiler": "^2.4.4",
-    "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "vue-loader": "^14.2.*",
+    "vue-template-compiler": "^2.6.4",
+    "webpack": "^4.*.*",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.*"
   }
 }
