@@ -6,7 +6,7 @@
     "vuejs tooltip",
     "magic tooltip"
   ],
-  "version": "1.0.7",
+  "version": "1.0.8",
   "author": "Laimonas Narbutas <info@monas.lt>",
   "homepage": "https://github.com/monas/magic-tooltip",
   "license": "MIT",
@@ -33,6 +33,8 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.14",
     "vue-loader": "^14.2.*",
     "vue-template-compiler": "^2.6.4",
     "webpack": "^4.*.*",
